@@ -1,15 +1,15 @@
-" Information 
+" Information
 " LAST UPDATED: 13/08/2020
 "
-"   _____          _____                       _____.__        
-" _/ ____\________/ ____\   ____  ____   _____/ ____\__| ____  
-" \   __\\___   /\   __\  _/ ___\/  _ \ /    \   __\|  |/ ___\ 
+"   _____          _____                       _____.__
+" _/ ____\________/ ____\   ____  ____   _____/ ____\__| ____
+" \   __\\___   /\   __\  _/ ___\/  _ \ /    \   __\|  |/ ___\
 "  |  |   /    /  |  |    \  \__(  <_> )   |  \  |  |  / /_/  >
-"  |__|  /_____ \ |__|     \___  >____/|___|  /__|  |__\___  / 
-"              \/              \/           \/        /_____/  
+"  |__|  /_____ \ |__|     \___  >____/|___|  /__|  |__\___  /
+"              \/              \/           \/        /_____/
 "
 " Configuration file for fzf, "a command-line fuzzy finder".
-" Configuration for Ripgrep can also be found here. 
+" Configuration for Ripgrep can also be found here.
 
 
 " This is the default extra key bindings

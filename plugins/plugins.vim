@@ -52,6 +52,7 @@ Plug 'TaDaa/vimade'
 
 " File Searching
 " FZF is already installed by Homebrew, fzf.vim is just a wrapper for fzf in vim
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 
