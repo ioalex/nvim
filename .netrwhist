@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =6
+let g:netrw_dirhist_6='/Users/alexhe/Desktop/Projects/Web-Development/quote-generator/src/pages'
+let g:netrw_dirhist_5='/Users/alexhe/Desktop/Projects/Web-Development/quote-generator/src'
+let g:netrw_dirhist_4='/Users/alexhe/Desktop/Projects/Web-Development/quote-generator'
+let g:netrw_dirhist_3='/Users/alexhe/Desktop/Projects/Web-Development/quote-generator/src/pages'
+let g:netrw_dirhist_2='/Users/alexhe/Desktop/Projects/Web-Development/quote-generator/src'
+let g:netrw_dirhist_1='/Users/alexhe/Desktop/Projects/Web-Development/quote-generator'

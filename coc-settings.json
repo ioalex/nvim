@@ -14,6 +14,9 @@
     "yaml",
     "python"
   ],
+  "emmet.includeLanguages": {
+    "jinja": "html"
+  },
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,

@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 13/08/2020
+" LAST UPDATED: 01/09/2020
 "
 " __________.__               .__
 " \______   \  |  __ __  ____ |__| ____   ______
@@ -26,12 +26,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Start Screen
 Plug 'mhinz/vim-startify'
 
-"Colour Themes
-Plug 'dracula/vim'
-Plug 'liuchengxu/space-vim-dark'
-Plug 'morhetz/gruvbox'
-Plug 'jaredgorski/spacecamp'
-Plug 'eskilop/NorthernLights.vim'
+" Colour Schemes
+source $HOME/.config/nvim/themes/colorschemes.vim
 
 " Visual Guides
 " Rainbow Brackets
@@ -51,7 +47,6 @@ Plug 'hecal3/vim-leader-guide'
 Plug 'TaDaa/vimade'
 
 " File Searching
-" FZF is already installed by Homebrew, fzf.vim is just a wrapper for fzf in vim
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
@@ -62,12 +57,26 @@ Plug 'majutsushi/tagbar'
 " IntelliSense and Syntax Highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" TypeScript and TSX Support
+" Respect EditorConfig files
+Plug 'editorconfig/editorconfig-vim'
+
+" Language Support
+" Nunjucks and Jinja
+Plug 'Glench/Vim-Jinja2-Syntax'
+
+" TypeScript and TSX
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
 " Initialise plugin system
 call plug#end()
+
+" Color Scheme Configuration
+set background=dark
+if (has("termguicolors"))
+ set termguicolors
+endif
+colorscheme dracula
 
 " Plugin Configuration
 " Startify Config
@@ -75,13 +84,6 @@ source $HOME/.config/nvim/plugins/startify.vim
 
 " CoC Configuration
 source $HOME/.config/nvim/plugins/coc.vim
-
-" Dracula Theme Config
-if (has("termguicolors"))
- set termguicolors
-endif
-syntax enable
-colorscheme dracula
 
 " Rainbow Config
 source $HOME/.config/nvim/plugins/rainbow.vim
