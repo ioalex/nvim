@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 01/09/2020
+" LAST UPDATED: 02/09/2020
 "
 " __________.__               .__
 " \______   \  |  __ __  ____ |__| ____   ______
@@ -51,14 +51,23 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 
+" File Manager - Ranger
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+
 " Tagbar - a class outline viewer for Vim
 Plug 'majutsushi/tagbar'
 
-" IntelliSense and Syntax Highlighting
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Use <Tab> for insert completions
+Plug 'ervandew/supertab'
 
 " Respect EditorConfig files
 Plug 'editorconfig/editorconfig-vim'
+
+" Reopen files at your last edit position
+Plug 'farmergreg/vim-lastplace'
+
+" IntelliSense and Syntax Highlighting
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Language Support
 " Nunjucks and Jinja
@@ -103,6 +112,9 @@ source $HOME/.config/nvim/plugins/fzf.vim
 " fzf use silversearcher-ag
 " Ignores node_modules and files included in .gitignore
 " let $FZF_DEFAULT_COMMAND = 'ag -g ""'
+
+" rnvimr Config
+source $HOME/.config/nvim/plugins/rnvimr.vim
 
 " Tagbar Config
 nmap <F8> :TagbarToggle<CR>
