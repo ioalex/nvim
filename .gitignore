@@ -12,4 +12,4 @@ session
 
 # Y'all don't need to see this!
 .DS_Store
-plugins/.DS_Store
+./plugins/.DS_Store
