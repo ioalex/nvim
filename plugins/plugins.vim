@@ -27,7 +27,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 Plug 'mhinz/vim-startify'
 
 " Colour Schemes
-source $HOME/.config/nvim/themes/colorschemes.vim
+source $HOME/.config/nvim/themes/themes.vim
 
 " Visual Guides
 " Rainbow Brackets
