@@ -11,6 +11,16 @@
 " Configuration file for CoC, an Intellisense engine for Vim8 & Neovim, full language
 " server protocol support as VSCode
 
+" Open CoC configuration file shortcut
+function! SetupCommandAbbrs(from, to)
+  exec 'cnoreabbrev <expr> '.a:from
+        \ .' ((getcmdtype() ==# ":" && getcmdline() ==# "'.a:from.'")'
+        \ .'? ("'.a:to.'") : ("'.a:from.'"))'
+endfunction
+
+" Use C to open coc config
+call SetupCommandAbbrs('C', 'CocConfig')
+
 " Extensions
 let g:coc_global_extensions = ['coc-explorer', 'coc-bookmark', 'coc-eslint', 'coc-prettier', 'coc-snippets', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-pairs', 'coc-import-cost', 'coc-markdownlint', 'coc-stylelintplus', 'coc-yaml']
 

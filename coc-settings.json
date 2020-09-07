@@ -14,13 +14,39 @@
     "yaml",
     "python"
   ],
+  /* Setting coc-prettier defaults
+  - Prettier will rely on this if no prettier configuration file exists */
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "none",
+  "prettier.bracketSpacing": true,
+  "prettier.jsxBracketSameLine": false,
+  "prettier.parser": "babylon",
+  "prettier.semi": true,
+  "prettier.useTabs": false,
+  "prettier.proseWrap": "preserve",
+  "prettier.arrowParens": "avoid",
+  "prettier.eslintIntegration": true,
+  "prettier.stylelintIntegration": false,
+
+  // ESLint Configuration
+  "eslint.enable": true,
+  "eslint.run": "onType",
+  "eslint.packageManager": "npm",
+  "eslint.autoFixOnSave": true,
+
   "emmet.includeLanguages": {
+    // Enable Emmet for Nunjucks templating engine
     "jinja.html": "html"
   },
+  // Turn off coc-css validation as coc-stylelintplus is preferred
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
   "wxss.validate": false,
+
+  // coc-explorer Settings
   "explorer.width": 30,
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,

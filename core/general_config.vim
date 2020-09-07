@@ -51,7 +51,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 
 set noswapfile
 set nobackup
-set undodir=~/.config/nvim/undodir
+set undodir=~/.config/nvim/undo
 set undofile
 set incsearch
 

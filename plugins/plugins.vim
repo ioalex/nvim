@@ -169,6 +169,15 @@ Plug 'Glench/Vim-Jinja2-Syntax'
 
 
 " ================
+"       JSON
+" ================
+
+" Vim syntax highlighting plugin for JSON with C-style line (//) and block (/* */) comments
+Plug 'kevinoid/vim-jsonc'
+
+
+
+" ================
 " TypeScript and TSX
 " ================
 Plug 'leafgarland/typescript-vim'
