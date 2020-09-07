@@ -79,3 +79,9 @@ Plug 'peitalin/vim-jsx-typescript'
 
 " Initialise plugin system
 call plug#end()
+
+" Automatically install missing plugins on startup
+autocmd VimEnter *
+  \  if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+  \|   PlugInstall --sync | q
+  \| endif

@@ -8,7 +8,7 @@
 "  \______  /\____/|__|    \___  > /\ \_/ |__|__|_|  /
 "         \/                   \/  \/              \/
 "
-" A lot of sourcing!
+" Lots of sourcing already!
 
 " General Settings
 source $HOME/.config/nvim/core/general_config.vim
