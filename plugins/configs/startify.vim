@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 13/08/2020
+" LAST UPDATED: 07/09/2020
 "
 "   _________ __                 __  .__  _____
 "  /   _____//  |______ ________/  |_|__|/ ____\__.__.
@@ -31,10 +31,17 @@ let g:startify_lists = [
 
 " Bookmarks
 let g:startify_bookmarks = [
-            \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'z': '~/.zshrc' },
+            \ { 'n': '~/.config/nvim' },
+            \ { 't': '~/.tmux.conf' },
+            \ { 'd': '~/Desktop' },
             \ '~/Desktop/Projects/science-fiction-v3',
             \ ]
+
+" Prepend vim-devicon icon to each Startify entry
+function! StartifyEntryFormat()
+        return 'WebDevIconsGetFileTypeSymbol(absolute_path) ." ". entry_path'
+    endfunction
 
 " Automatically restart a session
 " "If this option is enabled and you start Vim in a directory that contains a Session.vim, " that session will be loaded automatically. Otherwise it will be shown as the top entry

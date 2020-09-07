@@ -4,6 +4,9 @@ autoload
 # Vim undo directory
 undo
 
+# Startify sessions directory
+session
+
 # netrw history file
 .netrwhist
 
