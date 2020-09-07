@@ -67,6 +67,7 @@ Plug 'farmergreg/vim-lastplace'
 source $HOME/.config/nvim/themes/themes.vim
 
 
+
 " ====================================
 "                Editing
 " ====================================
@@ -91,6 +92,9 @@ Plug 'editorconfig/editorconfig-vim'
 
 " Zen mode
 Plug 'junegunn/goyo.vim'
+
+" Tagbar - a class outline viewer for Vim
+Plug 'majutsushi/tagbar'
 
 
 
@@ -117,15 +121,18 @@ Plug 'hecal3/vim-leader-guide'
 "     File Searching and Management
 " ====================================
 
+" Really fast fuzzy finding in Vim with a FZF wrapper
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Changes Vim working directory to project root
 Plug 'airblade/vim-rooter'
+
+" Helpers for UNIX shell commands
+Plug 'tpope/vim-eunuch'
 
 " Ranger File Manager Wrapper
 Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
-
-" Tagbar - a class outline viewer for Vim
-Plug 'majutsushi/tagbar'
 
 
 
@@ -136,18 +143,34 @@ Plug 'majutsushi/tagbar'
 " IntelliSense and Syntax Highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" HTML
+
+" ================
+"       HTML
+" ================
+
 " Auto-close tags
 Plug 'alvan/vim-closetag'
+
+" Changing an opening HTML tag will change the corresponding closing tag
+Plug 'andrewradev/tagalong.vim'
 
 " Better highliting for matching HTML tags
 Plug 'gregsexton/matchtag'
 
-" Templating
+
+
+" ================
+" Templating Languages
+" ================
+
 " Syntax Highlighting for Nunjucks and Jinja
 Plug 'Glench/Vim-Jinja2-Syntax'
 
+
+
+" ================
 " TypeScript and TSX
+" ================
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 

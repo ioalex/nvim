@@ -34,12 +34,17 @@ let g:webdevicons_enable = 1
 let g:webdevicons_enable_startify = 1
 
 " vim-closetag Config
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml' " These are the file extensions where this plugin is enabled.
-let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js' " " This will make the list of non-closing tags self-closing in the specified files.
-let g:closetag_filetypes = 'html,xhtml,phtml,javascript'  " These are the file types where this plugin is enabled.
+let g:closetag_filenames = '*.html, *.xhtml, *.phtml, *.njk' " These are the file extensions where this plugin is enabled.
+let g:closetag_xhtml_filenames = '*.xhtml, *.jsx, *.js' " This will make the list of non-closing tags self-closing in the specified files.
+let g:closetag_filetypes = 'html, xhtml, phtml, javascript, njk, jinja, jinja.html'  " These are the file types where this plugin is enabled.
 let g:closetag_emptyTags_caseSensitive = 1  " This will make the list of non-closing tags case-sensitive
 let g:closetag_shortcut = '>' " Shortcut for closing tags, default is '>'
 let g:closetag_close_shortcut = '<leader>>' " Add > at current position without closing the current tag, default is ''
+
+" tagalong.vim Config
+let g:tagalong_filetypes = ['html', 'xml', 'jsx', 'eruby', 'ejs', 'eco', 'php', 'htmldjango', 'javascriptreact', 'typescriptreact', 'javascript']
+let g:tagalong_additional_filetypes = ['nunjucks', 'njk', 'jinja', 'jinja.html']
+let g:tagalong_verbose = 1
 
 " Activate Rainbow Parentheses
 let g:rainbow_active = 1
