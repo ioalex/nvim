@@ -10,12 +10,19 @@
 "
 " A lot of sourcing!
 
+" General Settings
+source $HOME/.config/nvim/core/general_config.vim
+
+" Key Mapping
+source $HOME/.config/nvim/core/key_bindings.vim
+
 " Plugins
 " Plugins are installed at $HOME/.config/nvim/autoload/plugged
 source $HOME/.config/nvim/plugins/plugins.vim
 
-" General Settings
-source $HOME/.config/nvim/core/general.vim
+" Colorscheme Configuration
+" &termguicolors must be set before colorizer is sourced
+source $HOME/.config/nvim/themes/themes_config.vim
 
-" Key Mapping
-source $HOME/.config/nvim/core/key_bindings.vim
+" Plugins Configuration
+source $HOME/.config/nvim/plugins/plugins_config.vim
