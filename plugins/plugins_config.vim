@@ -1,4 +1,8 @@
 " Plugin Configuration
+
+" Colorscheme Config
+source $HOME/.config/nvim/themes/themes_config.vim
+
 " Startify Config
 source $HOME/.config/nvim/plugins/configs/startify.vim
 
