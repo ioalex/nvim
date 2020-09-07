@@ -1,3 +1,11 @@
+# vim-plug plugin installation directory
 autoload
-undodir
+
+# Vim undo directory
+undo
+
+# netrw history file
+.netrwhist
+
+# Y'all don't need to see this!
 .DS_Store

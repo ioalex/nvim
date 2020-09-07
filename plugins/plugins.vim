@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 02/09/2020
+" LAST UPDATED: 07/09/2020
 "
 " __________.__               .__
 " \______   \  |  __ __  ____ |__| ____   ______
@@ -11,7 +11,7 @@
 " Configuration file for Neovim plugins. Plugins are managed by vim-plug.
 " (https://github.com/junegunn/vim-plug)
 
-" Auto-install vim-plug
+" Auto-install vim-plug / Check if vim-plug is installed
 if empty(glob('~/.config/nvim/autoload/plug.vim'))
   silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -79,42 +79,3 @@ Plug 'peitalin/vim-jsx-typescript'
 
 " Initialise plugin system
 call plug#end()
-
-" Color Scheme Configuration
-set background=dark
-if (has("termguicolors"))
- set termguicolors
-endif
-colorscheme dracula
-
-" Plugin Configuration
-" Startify Config
-source $HOME/.config/nvim/plugins/startify.vim
-
-" CoC Configuration
-source $HOME/.config/nvim/plugins/coc.vim
-
-" Rainbow Config
-source $HOME/.config/nvim/plugins/rainbow.vim
-
-" Source coloriser Config
-lua require'plug-colorizer'
-
-" Vim-which-key Config
-let g:mapleader = "\<Space>"
-let g:maplocalleader = ','
-nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
-nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
-
-" FZF Config
-source $HOME/.config/nvim/plugins/fzf.vim
-
-" fzf use silversearcher-ag
-" Ignores node_modules and files included in .gitignore
-" let $FZF_DEFAULT_COMMAND = 'ag -g ""'
-
-" rnvimr Config
-source $HOME/.config/nvim/plugins/rnvimr.vim
-
-" Tagbar Config
-nmap <F8> :TagbarToggle<CR>
