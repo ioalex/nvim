@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 12/08/2020
+" LAST UPDATED: 08/09/2020
 "
 "  ____  __.             __________.__            .___.__
 " |    |/ _|____ ___.__. \______   \__| ____    __| _/|__| ____    ____  ______
@@ -28,7 +28,7 @@ nnoremap <M-k>    :resize +2<CR>
 nnoremap <M-h>    :vertical resize -2<CR>
 nnoremap <M-l>    :vertical resize +2<CR>
 
-" I hate escape more than anything else
+" When I am too lazy to hit the ESC key
 inoremap jk <Esc>
 inoremap kj <Esc>
 

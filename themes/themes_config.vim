@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 07/09/2020
+" LAST UPDATED: 08/09/2020
 "
 " ___________.__                                   _________                _____.__
 " \__    ___/|  |__   ____   _____   ____   ______ \_   ___ \  ____   _____/ ____\__| ____
@@ -11,9 +11,19 @@
 " Theme / :colorscheme configuration.
 " Default Theme: dracula
 
-" Set Editor Dark Mode
+" Assume a dark background
 set background=dark
-if (has("termguicolors"))
- set termguicolors
+
+" Use true colour in terminal
+if exists('+termguicolors')
+  let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+  let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+  set termguicolors
 endif
+
+" Set colorscheme to dracula
 colorscheme dracula
+
+" Fix cursor flick when using Neovim under tmux
+hi EndOfBuffer ctermbg=NONE ctermfg=200 cterm=NONE
+hi Normal ctermbg=NONE ctermfg=200 cterm=NONE

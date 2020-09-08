@@ -18,7 +18,7 @@ function! SetupCommandAbbrs(from, to)
         \ .'? ("'.a:to.'") : ("'.a:from.'"))'
 endfunction
 
-" Use C to open coc config
+" Shortcut: Use C to open coc config
 call SetupCommandAbbrs('C', 'CocConfig')
 
 " Extensions

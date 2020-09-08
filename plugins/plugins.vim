@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 07/09/2020
+" LAST UPDATED: 08/09/2020
 "
 " __________.__               .__
 " \______   \  |  __ __  ____ |__| ____   ______
@@ -90,11 +90,13 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 " Respect EditorConfig files
 Plug 'editorconfig/editorconfig-vim'
 
-" Zen mode
-Plug 'junegunn/goyo.vim'
-
 " Tagbar - a class outline viewer for Vim
 Plug 'majutsushi/tagbar'
+
+" Zen mode
+Plug 'junegunn/goyo.vim' " Distraction-free writing
+Plug 'junegunn/limelight.vim', " Hyperfocus-writing
+
 
 
 
@@ -108,8 +110,8 @@ Plug 'luochen1990/rainbow'
 " Colour Highlighter
 Plug 'norcalli/nvim-colorizer.lua'
 
-" Indicate added, modified and removed lines in a VCS managed file
-Plug 'mhinz/vim-signify'
+" Displays indentation levels with thin vertical lines
+Plug 'yggdroot/indentline'
 
 " Key Binding Guide
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
@@ -142,6 +144,15 @@ Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 " IntelliSense and Syntax Highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
+" ================
+"     Markdown
+" ================
+
+" Markdown Preview plugin - synchronised scrolling
+Plug 'iamcco/markdown-preview.nvim'
+
 
 
 " ================
@@ -178,10 +189,54 @@ Plug 'kevinoid/vim-jsonc'
 
 
 " ================
+"    JavaScript
+" ================
+
+" Generates JSDoc block comments based on a function signature
+Plug 'heavenshell/vim-jsdoc', {
+  \ 'for': ['javascript', 'javascript.jsx','typescript'],
+  \ 'do': 'make install'
+\}
+
+
+
+" ================
 " TypeScript and TSX
 " ================
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
+
+
+
+" ====================================
+"             Integrations
+" ====================================
+
+" Discord Rich Presence for Neovim
+Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
+
+
+" ================
+"       Git
+" ================
+
+" Indicate added, modified and removed lines in a VCS managed file
+Plug 'mhinz/vim-signify'
+
+
+
+" ================
+"       Tmux
+" ================
+
+" Seamless navigation between tmux panes and vim splits
+Plug 'christoomey/vim-tmux-navigator'
+
+" Interact with tmux - VimuxRunCommand will create a horizontal pane under the current tmux pane
+Plug 'benmills/vimux'
+
+" Vim plugin for editing .tmux.conf.
+Plug 'tmux-plugins/vim-tmux'
 
 
 
