@@ -7,6 +7,9 @@ undo
 # Startify sessions directory
 session
 
+# temporary directory - log files
+tmp
+
 # netrw history file
 .netrwhist
 

@@ -117,6 +117,9 @@ Plug 'yggdroot/indentline'
 Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
 Plug 'hecal3/vim-leader-guide'
 
+" ಠ_ಠ Vim plugin to disapprove deeply indented code ಠ_ಠ
+Plug 'dodie/vim-disapprove-deep-indentation'
+
 
 
 " ====================================
@@ -151,7 +154,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " ================
 
 " Markdown Preview plugin - synchronised scrolling
-Plug 'iamcco/markdown-preview.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'for': 'markdown' }
 
 
 
@@ -160,13 +163,13 @@ Plug 'iamcco/markdown-preview.nvim'
 " ================
 
 " Auto-close tags
-Plug 'alvan/vim-closetag'
+Plug 'alvan/vim-closetag', { 'for': ['html', 'jinja.html', 'javascript', 'javascript.jsx','typescript'] }
 
 " Changing an opening HTML tag will change the corresponding closing tag
-Plug 'andrewradev/tagalong.vim'
+Plug 'andrewradev/tagalong.vim', { 'for': ['html', 'jinja.html', 'javascript', 'javascript.jsx','typescript'] }
 
 " Better highliting for matching HTML tags
-Plug 'gregsexton/matchtag'
+Plug 'gregsexton/matchtag', { 'for': ['html', 'jinja.html', 'javascript', 'javascript.jsx','typescript'] }
 
 
 
@@ -175,7 +178,7 @@ Plug 'gregsexton/matchtag'
 " ================
 
 " Syntax Highlighting for Nunjucks and Jinja
-Plug 'Glench/Vim-Jinja2-Syntax'
+Plug 'Glench/Vim-Jinja2-Syntax', { 'for': 'jinja.html' }
 
 
 

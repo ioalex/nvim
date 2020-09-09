@@ -33,6 +33,12 @@ let g:webdevicons_enable = 1
 " Enable for vim-startify screen
 let g:webdevicons_enable_startify = 1
 
+" vim-disapprove-deep-indentation Config
+" shows ಠ_ಠ at the beginning of each line that is indented at least 5 levels
+let g:LookOfDisapprovalTabThreshold=5
+let g:LookOfDisapprovalSpaceThreshold=(&tabstop*5)
+let g:LookOfDisapprovalNoStyle=1 " Disable styling to improve compatibility with indentLine - both use Vim's conceal feature
+
 " vim-closetag Config
 let g:closetag_filenames = '*.html, *.xhtml, *.phtml, *.njk' " These are the file extensions where this plugin is enabled.
 let g:closetag_xhtml_filenames = '*.xhtml, *.jsx, *.js' " This will make the list of non-closing tags self-closing in the specified files.
