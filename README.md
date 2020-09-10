@@ -15,7 +15,7 @@
   <h3 align="center">The Spicy McVim™</h3>
 
   <p align="center">
-    Spicy Configuration for Neovim
+    The Spiciest Neovim Configuration
     <br />
     <a href="https://github.com/ioalex/McVim"><strong>Explore the docs »</strong></a>
     <br />
@@ -36,7 +36,15 @@
 
 This repository contains my personal configuration files for [Neovim](https://neovim.io/), a Vim-fork focused on extensibility and usability.
 
-Like many, I have scoured the Internet in search of the best Vim configurations and plugins. I have stalked down quite a few Gists and dotfile / vimrc repositories of some [smart smart people](#acknowledgements) and have tried out their settings for myself. McVim is a collection of their hard work with my own finishing touches.
+Like many, I have scoured the Internet in search of the best Vim configurations and plugins. I have stalked down quite a few Gists and dotfile / vimrc repositories of some [smart smart people](#acknowledgements) and have tried out their settings for myself. McVim is a collection of their hard work with my own finishing touches - spice. 🌶
+
+Whether or not the McVim™ is the 'best' configuration for Neovim is up to personal opinion, but noone can deny that it is indeed the spiciest!!!
+
+If you dislike spicy goodness, have an allergy or just don't have the appetite, feel free to pick apart the McVim™ and take / use the bits you like - or don't use it at all, I won't hurt you!
+
+If you're not a picky eater, then definitely give the McVim™ a try! It's a quick way to dive into a cozy development environment in the terminal without doing the tedious configuring yourself.
+
+## Quick Notes
 
 Note:
 The many comments throughout the Vim files serve as reminders for myself and as guides for Vim-beginners who somehow find their way here!
@@ -57,7 +65,7 @@ To have the mighty Spicy McVim™ on your system, clone this repository to your 
 
 ### Installation
 
-This will be updated!
+Installation instructions coming soon!
 
 ## Usage
 
@@ -100,7 +108,9 @@ Project Link: [https://github.com/ioalex/McVim](https://github.com/ioalex/McVim)
 - [Junegunn Choi](https://github.com/junegunn)
 - [Shougo](https://github.com/Shougo)
 
-This will be updated!
+This will be updated as there are more people to thank!
+
+This project has been really fun and kind of stupid. I'm probably wasting my time here but I can't stop... I've already gone ahead and purchased a domain! 🤪
 
 <!-- Links -->
 

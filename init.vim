@@ -9,7 +9,7 @@
 " \____|__  /\___  >\___/   |__|__|_|  /
 "         \/     \/                  \/
 "
-" Spicy configuration for Neovim.
+" The Spiciest Neovim Configuration.
 
 
 " ⚠️ Warning: There will be a lot of sauce-ing(souricng)!
