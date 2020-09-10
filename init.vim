@@ -1,15 +1,18 @@
 " Information
-" LAST UPDATED: 07/09/2020
+" LAST UPDATED: 10/09/2020
 "
-" This is a configuration file for
-"  _______                    .__
-"  \      \   ____  _______  _|__| _____
-"  /   |   \_/ __ \/  _ \  \/ /  |/     \
-" /    |    \  ___(  <_> )   /|  |  Y Y  \
-" \____|__  /\___  >____/ \_/ |__|__|_|  /
-"         \/     \/                    \/
+" The Spicy
+"    _____       ____   ____.__
+"   /     \   ___\   \ /   /|__| _____
+"  /  \ /  \_/ ___\   Y   / |  |/     \
+" /    Y    \  \___\     /  |  |  Y Y  \
+" \____|__  /\___  >\___/   |__|__|_|  /
+"         \/     \/                  \/
+"
+" Spicy configuration for Neovim.
 
-" ⚠️ Warning: There will be a lot of sourcing!
+
+" ⚠️ Warning: There will be a lot of sauce-ing(souricng)!
 
 " The goal is to have things neat, tidy and modular 😊.
 " You can find me on GitHub as ioalex <https://github.com/ioalex>.

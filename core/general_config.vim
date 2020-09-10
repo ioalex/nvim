@@ -9,6 +9,7 @@
 "         \/     \/     \/     \/           \/               \/     \/                   \//_____/     \/
 "
 " Configuration file for general settings in Neovim.
+" You may find some settings from tpope/vim-sensible in here! <github.com/tpope/vim-sensible>
 
 " The following if statement allows Vim to work without being Vi-compatible
 " so that all Vim features will be available to the user
