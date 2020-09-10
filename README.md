@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ioalex/McVim#readme#introduction">
-    <img src=".github/images/Logo.png" alt="Logo" width="80" height="80">
+    <img src="./.github/images/Logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">The Spicy McVim™</h3>
@@ -17,10 +17,10 @@
   <p align="center">
     The Spiciest Neovim Configuration
     <br />
-    <a href="https://github.com/ioalex/McVim"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ioalex/McVim#readme"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/ioalex/McVim">View Demo</a>
+    <a href="https://github.com/ioalex/McVim#introduction">View Demo</a>
     ·
     <a href="https://github.com/ioalex/McVim/issues">Report Bug</a>
     ·
@@ -127,4 +127,4 @@ This project has been really fun and kind of stupid. I'm probably wasting my tim
 
 <!-- Links -->
 
-[product-screenshot]: .github/images/Screenshot.png
+[product-screenshot]: ./.github/images/Screenshot.png
