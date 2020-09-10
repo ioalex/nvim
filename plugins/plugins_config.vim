@@ -87,3 +87,6 @@ nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
 
 " Tagbar Config
 nmap <F8> :TagbarToggle<CR>
+
+" Shortcut: Generate TOC in Markdown files
+call SetupCommandAbbrs('TOC', 'GenerateMarkdownTOC')
