@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 08/09/2020
+" LAST UPDATED: 10/09/2020
 "
 " __________.__               .__
 " \______   \  |  __ __  ____ |__| ____   ______
@@ -57,6 +57,13 @@ Plug 'TaDaa/vimade'
 " Reopen files at your last edit position
 Plug 'farmergreg/vim-lastplace'
 
+" 'Buffer tabs' that live in the tabline
+Plug 'ap/vim-buftabline'
+
+" Special formatting for .todo and .taskpaper files.
+" You can sdd tags to tasks by starting them with an @, eg. @important or @due(tuesday).
+Plug 'irrationalistic/vim-tasks'
+
 
 
 " ====================================
@@ -87,6 +94,12 @@ Plug 'RRethy/vim-illuminate'
 " Enable multiple cursors - like VSCode!
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
+" Better Whitespace Highlighting
+Plug 'ntpeters/vim-better-whitespace'
+
+" Strips trailing whitespace from lines you edit or visit in Insert mode
+Plug 'thirtythreeforty/lessspace.vim'
+
 " Respect EditorConfig files
 Plug 'editorconfig/editorconfig-vim'
 
@@ -97,6 +110,8 @@ Plug 'majutsushi/tagbar'
 Plug 'junegunn/goyo.vim' " Distraction-free writing
 Plug 'junegunn/limelight.vim', " Hyperfocus-writing
 
+" Alternates between relative and absolute line numbering
+Plug 'myusuf3/numbers.vim'
 
 
 
@@ -214,9 +229,6 @@ Plug 'peitalin/vim-jsx-typescript'
 " ====================================
 "             Integrations
 " ====================================
-
-" Discord Rich Presence for Neovim
-Plug 'aurieh/discord.nvim', { 'do': ':UpdateRemotePlugins'}
 
 
 " ================

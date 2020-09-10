@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 08/09/2020
+" LAST UPDATED: 10/09/2020
 "
 "  ____  __.             __________.__            .___.__
 " |    |/ _|____ ___.__. \______   \__| ____    __| _/|__| ____    ____  ______
@@ -10,13 +10,32 @@
 "
 " Configuration file for key-remapping in Neovim.
 
-" Uncomment to deactivate ↑ ↓ ← → keys
-" This is useful for learning Vim navigation
-" map <Up> <NOP>
-" map <Down> <NOP>
-" map <Left> <NOP>
-" map <Right> <NOP>
+" =======================================================================
+"                                 Leader
+" =======================================================================
+" Set leader key
+let g:mapleader = "\<Space>"
 
+
+
+" =======================================================================
+"                                Arrow Keys
+" =======================================================================
+" Disable ↑ ↓ ← → keys
+" This is useful for learning Vim navigation
+map <Up> <NOP>
+map <Down> <NOP>
+map <Left> <NOP>
+map <Right> <NOP>
+
+
+
+" =======================================================================
+"                                Remapping
+" =======================================================================
+" Buftabline
+nnoremap <C-N> :bnext<CR>
+nnoremap <C-P> :bprev<CR>
 
 " Better nav for omnicomplete
 inoremap <expr> <c-j> ("\<C-n>")
@@ -41,9 +60,12 @@ nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
 
-" Alternate way to save
+" Alternate ways to save
 nnoremap <C-s> :w<CR>
-" Alternate way to quit
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader><Leader> :w<CR>
+
+" Alternate way to save and quit
 nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>

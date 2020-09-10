@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 07/09/2020
+" LAST UPDATED: 10/09/2020
 "
 " _________                               .__
 " \_   ___ \  ___________   ____    ___  _|__| _____
@@ -12,6 +12,9 @@
 
 " General Settings
 source $HOME/.config/nvim/core/general_config.vim
+
+" Functions
+source $HOME/.config/nvim/core/functions.vim
 
 " Key Mapping
 source $HOME/.config/nvim/core/key_bindings.vim

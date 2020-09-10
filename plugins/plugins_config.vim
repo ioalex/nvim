@@ -1,5 +1,5 @@
 " Information
-" LAST UPDATED: 08/09/2020
+" LAST UPDATED: 10/09/2020
 "
 " __________.__               .__         _________                _____.__
 " \______   \  |  __ __  ____ |__| ____   \_   ___ \  ____   _____/ ____\__| ____
@@ -51,6 +51,26 @@ let g:closetag_close_shortcut = '<leader>>' " Add > at current position without 
 let g:tagalong_filetypes = ['html', 'xml', 'jsx', 'eruby', 'ejs', 'eco', 'php', 'htmldjango', 'javascriptreact', 'typescriptreact', 'javascript']
 let g:tagalong_additional_filetypes = ['nunjucks', 'njk', 'jinja', 'jinja.html']
 let g:tagalong_verbose = 1
+
+" vim-lastplace Config
+let g:lastplace_ignore = "gitcommit,gitrebase,svn,hgcommit"
+let g:lastplace_ignore_buftype = "quickfix,nofile,help"
+let g:lastplace_open_folds = 0
+
+" vim-better-whitespace Config
+" lessspace.vim trimming is preferred as it only trims from lines edited as to prevent bloat in version control logs
+" let g:better_whitespace_ctermcolor = '<desired_color>' " Sets highlight colour
+let g:better_whitespace_enabled = 1
+let g:strip_whitespace_on_save = 0
+let g:better_whitespace_verbosity=1
+
+" lessspace.vim Config
+let g:lessspace_enabled = 1
+let g:lessspace_normal = 1
+let g:lessspace_blacklist = ['diff']
+
+" Numbers.vim Compatibility
+let g:numbers_exclude = ['tagbar', 'startify']
 
 " Activate Rainbow Parentheses
 let g:rainbow_active = 1
