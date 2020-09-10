@@ -30,6 +30,19 @@
 
 ## Table of Contents
 
+1. [Table of Contents](#table-of-contents)
+2. [Introduction](#introduction)
+3. [Quick Notes](#quick-notes)
+4. [Getting Started](#getting-started)
+   - [Prerequisites](#prerequisites)
+   - [Installation](#installation)
+5. [Usage](#usage)
+6. [Roadmap](#roadmap)
+7. [Contributing](#contributing)
+8. [License](#license)
+9. [Contact](#contact)
+10. [Acknowledgements](#acknowledgements)
+
 ## Introduction
 
 [![Product Name Screen Shot][product-screenshot]](https://nvim.com)
