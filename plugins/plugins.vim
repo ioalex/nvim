@@ -168,6 +168,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "     Markdown
 " ================
 
+" Generates a Table of Contents for Markdown
+Plug 'ajorgensen/vim-markdown-toc'
+
 " Markdown Preview plugin - synchronised scrolling
 Plug 'iamcco/markdown-preview.nvim', { 'for': 'markdown' }
 
