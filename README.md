@@ -9,7 +9,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/ioalex/McVim#readme#introduction">
-    <img src="./.github/images/Logo.png" alt="Logo" width="80" height="80">
+    <img src="./images/Logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">The Spicy McVim™</h3>
@@ -87,7 +87,7 @@ This will be updated!
 
 ## Plugins
 
-See [`PLUGINS.md`](https://github.com/ioalex/McVim/blob/master/PLUGINS.md) for a list of included plugins.
+See [`PLUGINS.md`](PLUGINS.md) for a list of included plugins.
 
 ## Roadmap
 
@@ -132,4 +132,4 @@ This project has been really fun and kind of stupid. I'm probably wasting my tim
 
 <!-- Links -->
 
-[product-screenshot]: ./.github/images/Screenshot.png
+[product-screenshot]: ./images/Screenshot.png
