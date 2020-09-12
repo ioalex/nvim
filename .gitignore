@@ -1,19 +1,2 @@
-# vim-plug plugin installation directory
-autoload
-
-# Vim undo directory
-undo
-
-# Startify sessions directory
-session
-
-# temporary directory - log files
-tmp
-*.log
-
-# netrw history file
-.netrwhist
-
 # Y'all don't need to see this!
 .DS_Store
-plugins/.DS_Store
