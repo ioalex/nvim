@@ -1,5 +1,5 @@
 # vim-plug plugin installation directory
-autoload
+autoload/plugged
 
 # Vim undo directory
 undo
