@@ -37,11 +37,12 @@
    - [Prerequisites](#prerequisites)
    - [Installation](#installation)
 5. [Usage](#usage)
-6. [Roadmap](#roadmap)
-7. [Contributing](#contributing)
-8. [License](#license)
-9. [Contact](#contact)
-10. [Acknowledgements](#acknowledgements)
+6. [Plugins](#plugins)
+7. [Roadmap](#roadmap)
+8. [Contributing](#contributing)
+9. [License](#license)
+10. [Contact](#contact)
+11. [Acknowledgements](#acknowledgements)
 
 ## Introduction
 
@@ -83,6 +84,10 @@ Installation instructions coming soon!
 ## Usage
 
 This will be updated!
+
+## Plugins
+
+See [`PLUGINS.md`](https://github.com/ioalex/McVim/blob/master/PLUGINS.md) for a list of included plugins.
 
 ## Roadmap
 

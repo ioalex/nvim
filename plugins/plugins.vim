@@ -60,10 +60,6 @@ Plug 'farmergreg/vim-lastplace'
 " 'Buffer tabs' that live in the tabline
 Plug 'ap/vim-buftabline'
 
-" Special formatting for .todo and .taskpaper files.
-" You can sdd tags to tasks by starting them with an @, eg. @important or @due(tuesday).
-Plug 'irrationalistic/vim-tasks'
-
 
 
 " ====================================
@@ -162,6 +158,16 @@ Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 " IntelliSense and Syntax Highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
+" ================
+"       Todo
+" ================
+
+" Special formatting for .todo and .taskpaper files.
+" You can sdd tags to tasks by starting them with an @, eg. @important or @due(tuesday).
+Plug 'irrationalistic/vim-tasks'
+
 
 
 " ================

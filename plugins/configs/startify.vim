@@ -30,12 +30,13 @@ let g:startify_lists = [
           \ ]
 
 " Bookmarks
+" Path variables defined in .zshrc
 let g:startify_bookmarks = [
-            \ { 'z': '~/.zshrc' },
-            \ { 'n': '~/.config/nvim' },
-            \ { 't': '~/.tmux.conf' },
-            \ { 'd': '~/Desktop' },
-            \ '~/Desktop/Projects/science-fiction-v3',
+            \ { 'z': '$ZSH_CONFIG' },
+            \ { 'n': '$NVIM_PATH' },
+            \ { 't': '$TMUX_CONFIG' },
+            \ { 'd': '$DESKTOP' },
+            \ { 'w': '$WEBDEV' },
             \ ]
 
 " Prepend vim-devicon icon to each Startify entry

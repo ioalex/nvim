@@ -9,6 +9,7 @@ session
 
 # temporary directory - log files
 tmp
+*.log
 
 # netrw history file
 .netrwhist
