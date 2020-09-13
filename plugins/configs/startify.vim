@@ -32,7 +32,7 @@ let g:startify_lists = [
 " Bookmarks
 " Path variables defined in .zshrc
 let g:startify_bookmarks = [
-            \ { 'z': '$ZSH_CONFIG' },
+            \ { 'z': '$ZSHRC' },
             \ { 'n': '$NVIM_PATH' },
             \ { 't': '$TMUX_CONFIG' },
             \ { 'd': '$DESKTOP' },
