@@ -2,7 +2,8 @@
 autoload/plugged
 
 # Vim undo directory
-undo
+undo/**
+!undo/.gitkeep
 
 # Startify sessions directory
 session

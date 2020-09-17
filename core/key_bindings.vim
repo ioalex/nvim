@@ -65,8 +65,7 @@ nnoremap <S-TAB> :bprevious<CR>
 
 " Alternate ways to save
 nnoremap <C-s> :w<CR>
-nnoremap <Leader>w :w<CR>
-nnoremap <Leader><Leader> :w<CR>
+nnoremap <Leader>w :w!<CR>
 
 " Alternate way to save and quit
 nnoremap <C-Q> :wq!<CR>
