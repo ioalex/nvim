@@ -6,7 +6,8 @@ undo/**
 !undo/.gitkeep
 
 # Startify sessions directory
-session
+session/**
+!session/.gitkeep
 
 # temporary directory - log files
 tmp
@@ -17,4 +18,3 @@ tmp
 
 # Y'all don't need to see this!
 .DS_Store
-plugins/.DS_Store
