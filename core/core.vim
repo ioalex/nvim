@@ -13,6 +13,9 @@
 " General Settings
 source $HOME/.config/nvim/core/general_config.vim
 
+" Paths
+source $HOME/.config/nvim/core/paths.vim
+
 " Functions
 source $HOME/.config/nvim/core/functions.vim
 

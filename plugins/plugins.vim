@@ -49,7 +49,7 @@ Plug 'mhinz/vim-startify'
 Plug 'ryanoasis/vim-devicons'
 
 " Use <Tab> for insert completions
-Plug 'ervandew/supertab'
+" Plug 'ervandew/supertab'
 
 " Fade inactive buffers
 Plug 'TaDaa/vimade'
@@ -104,10 +104,14 @@ Plug 'majutsushi/tagbar'
 
 " Zen mode
 Plug 'junegunn/goyo.vim' " Distraction-free writing
-Plug 'junegunn/limelight.vim', " Hyperfocus-writing
+Plug 'junegunn/limelight.vim' " Hyperfocus-writing
+" Plug 'amix/vim-zenroom2' " Emulates iA Writer environment
 
 " Alternates between relative and absolute line numbering
 Plug 'myusuf3/numbers.vim'
+
+" Simple alignment plugin
+Plug 'junegunn/vim-easy-align'
 
 
 
@@ -156,8 +160,18 @@ Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 "           Language Support
 " ====================================
 
+" Language Pack for a LOT of languages
+Plug 'sheerun/vim-polyglot'
+
 " IntelliSense and Syntax Highlighting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Use FZF instead of coc.nvim's default fuzzy finder
+Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
+
+" Asynchronous Lint Engine
+" Plug 'dense-analysis/ale'
+
 
 
 " ================
@@ -219,6 +233,9 @@ Plug 'kevinoid/vim-jsonc'
 "    JavaScript
 " ================
 
+
+Plug 'pangloss/vim-javascript'
+
 " Generates JSDoc block comments based on a function signature
 Plug 'heavenshell/vim-jsdoc', {
   \ 'for': ['javascript', 'javascript.jsx','typescript'],
@@ -247,7 +264,8 @@ Plug 'peitalin/vim-jsx-typescript'
 " Indicate added, modified and removed lines in a VCS managed file
 Plug 'mhinz/vim-signify'
 
-
+" Git Wrapper by the one and only
+Plug 'tpope/vim-fugitive'
 
 " ================
 "       Tmux

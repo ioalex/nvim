@@ -41,6 +41,7 @@ set showcmd                             " Show (partial) command in status line
 set pumheight=10                        " Makes popup menu smaller
 set cmdheight=2                         " More space for displaying messages
 set noshowmode                          " We don't need to see things like -- INSERT -- anymore
+set shortmess+=c                        " Don't pass messages to |ins-completion-menu|.
 set hidden                              " Required to keep multiple buffers open multiple buffers
 set display+=lastline                   " Show the last line
 set lazyredraw                          " Screen will not be redrawn while executing macros, registers and other commands that have not been typed
@@ -63,6 +64,15 @@ endif
 " Recommended by plugins
 set updatetime=300                      " Faster completion
 set timeoutlen=500                      " By default timeoutlen is 1000 ms
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+if has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
 
 " Prevent global options from overriding any changes to your vimrc/init.vim
 set sessionoptions-=options
@@ -97,6 +107,12 @@ if !exists("g:syntax_on")
     syntax enable
 endif
 
+" Vim-polygot Config
+let g:polyglot_disabled = ['markdown', 'javascript']
+
+" Disables all LSP features in ALE so ALE doesn't try to provide LSP features already provided by coc.nvim
+" let g:ale_disable_lsp = 1
+
 
 
 " =======================================================================
@@ -118,6 +134,7 @@ scriptencoding utf-8
 set spell		                            " Turn on spell check
 set spelllang=en_us                     " Set spell check language
 autocmd Filetype gitcommit setlocal spell " Ensures spellcheck is enabled for Git commit messages, even if lines above are commented out!
+
 
 
 " =======================================================================
@@ -167,7 +184,7 @@ set autoread
 au FocusGained,BufEnter * checktime
 
 " Write to file with root permissions after editing as non-root
-cmap w!! w !sudo tee %
+cmap w!! w !sudo tee %\
 
 
 

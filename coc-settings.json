@@ -11,9 +11,14 @@
     "css",
     "markdown",
     "html",
+    "nunjucks",
     "yaml",
     "python"
   ],
+  // Integration with ALE
+  // sends diagnostics to ALE
+  // "diagnostic.displayByAle": true,
+
   /* Setting coc-prettier defaults
   - Prettier will rely on this if no prettier configuration file exists */
   "prettier.printWidth": 80,
@@ -47,7 +52,8 @@
 
   "emmet.includeLanguages": {
     // Enable Emmet for Nunjucks templating engine
-    "jinja.html": "html"
+    "jinja.html": "html",
+    "nunjucks": "html"
   },
   // Turn off coc-css validation as coc-stylelintplus is preferred
   "css.validate": false,

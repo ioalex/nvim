@@ -33,9 +33,6 @@ map <Right> <NOP>
 " =======================================================================
 "                                Remapping
 " =======================================================================
-" Buftabline
-nnoremap <C-N> :bnext<CR>
-nnoremap <C-P> :bprev<CR>
 
 " Vim-commentary (Ctrl + /)
 nnoremap <C-_> :Commentary<CR>
@@ -45,14 +42,10 @@ inoremap <expr> <c-j> ("\<C-n>")
 inoremap <expr> <c-k> ("\<C-p>")
 
 " Use alt + hjkl to resize windows
-nnoremap <M-j>    :resize -2<CR>
-nnoremap <M-k>    :resize +2<CR>
-nnoremap <M-h>    :vertical resize -2<CR>
-nnoremap <M-l>    :vertical resize +2<CR>
-
-" When I am too lazy to hit the ESC key
-inoremap jk <Esc>
-inoremap kj <Esc>
+" nnoremap <M-j>    :resize -2<CR>
+" nnoremap <M-k>    :resize +2<CR>
+" nnoremap <M-h>    :vertical resize -2<CR>
+" nnoremap <M-l>    :vertical resize +2<CR>
 
 " Easy CAPS
 inoremap <c-u> <ESC>viwUi
@@ -70,11 +63,8 @@ nnoremap <Leader>w :w!<CR>
 " Alternate way to save and quit
 nnoremap <C-Q> :wq!<CR>
 
-" " Use control-c instead of escape
-" nnoremap <C-c> <Esc>
-
-" <TAB>: completion.
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
+" Alternate way to force quit
+nnoremap <Leader>q :q!<CR>
 
 " Better tabbing
 vnoremap < <gv
@@ -91,3 +81,6 @@ nnoremap <Leader>O O<Esc>^Da
 
 " Dash.vim
 :nmap <silent> <leader>d <Plug>DashSearch
+
+" Coc-fzf
+nnoremap <Leader>l :CocFzfList<CR>

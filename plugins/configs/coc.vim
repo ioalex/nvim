@@ -22,7 +22,7 @@ endfunction
 call SetupCommandAbbrs('C', 'CocConfig')
 
 " Extensions
-let g:coc_global_extensions = ['coc-explorer', 'coc-bookmark', 'coc-eslint', 'coc-prettier', 'coc-snippets', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-tsserver', 'coc-pairs', 'coc-import-cost', 'coc-markdownlint', 'coc-stylelintplus', 'coc-yaml']
+let g:coc_global_extensions = ['coc-explorer', 'coc-bookmark', 'coc-snippets', 'coc-import-cost', 'coc-template', 'coc-pairs', 'coc-eslint', 'coc-stylelintplus', 'coc-markdownlint', 'coc-prettier', 'coc-emmet', 'coc-html', 'coc-css', 'coc-json', 'coc-tsserver', 'coc-yaml', 'coc-sh', 'coc-vimlsp']
 
 " Explorer Key Mapping
 nmap <space>e :CocCommand explorer<CR>
@@ -36,9 +36,36 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
+" Use tab for trigger completion with characters ahead and navigate.
+" NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
+" other plugin before putting this into your config.
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
 " Use <c-space> to trigger completion.
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
+" Use <cr> to confirm completion, `<C-g>u` means break undo chain at current
+" position. Coc only does snippet and additional edit on confirm.
+" <cr> could be remapped by other vim plugin, try `:verbose imap <CR>`.
+if exists('*complete_info')
+  inoremap <expr> <cr> complete_info()["selected"] != "-1" ? "\<C-y>" : "\<C-g>u\<CR>"
+else
+  inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+endif
+
+" Coc-template
+" Automatically add templates to empty buffers for these filetypes:
+autocmd BufNewFile *.sh :CocCommand template.templateTop

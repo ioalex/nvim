@@ -90,3 +90,6 @@ nmap <F8> :TagbarToggle<CR>
 
 " Shortcut: Generate TOC in Markdown files
 call SetupCommandAbbrs('TOC', 'GenerateMarkdownTOC')
+
+" Set Nunjucks file type
+au BufNewFile,BufRead *.njk,*.nunjucks,*.nunjs,*.nj set ft=nunjucks

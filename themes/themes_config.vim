@@ -21,8 +21,12 @@ if exists('+termguicolors')
   set termguicolors
 endif
 
+" Fix transparent background
+hi! Normal ctermbg=NONE guibg=NONE
+hi! NonText ctermbg=NONE guibg=NONE guifg=NONE ctermfg=NONE
+
 " Set colorscheme to dracula
-colorscheme dracula
+colorscheme gruvbox
 
 " Fix cursor flick when using Neovim under tmux
 hi EndOfBuffer ctermbg=NONE ctermfg=200 cterm=NONE
