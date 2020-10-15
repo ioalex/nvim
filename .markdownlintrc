@@ -1,0 +1,15 @@
+{
+  // Enable all markdownlint rules
+  "default": true,
+
+  // Set Ordered list item prefix to "ordered" (use 1. 2. 3. not 1. 1. 1.)
+  "MD029": { "style": "ordered" },
+
+  "MD007": { "indent": 2 },
+
+  // Disable MD033/no-inline-html rule
+  "MD033": false,
+
+  // Disable MD013/line-length rule
+  "MD013": false
+}
