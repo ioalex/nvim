@@ -115,7 +115,7 @@ Distributed under the MIT License. See [`LICENSE`](https://github.com/ioalex/McV
 
 ## Contact
 
-Alex - [@alexheio](https://twitter.com/alexheio) - alex@alexhe.io
+Alex - [@ioalex\_](https://twitter.com/ioalex_) - alex@alexhe.io
 
 Project Link: [https://github.com/ioalex/McVim](https://github.com/ioalex/McVim)
 

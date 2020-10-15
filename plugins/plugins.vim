@@ -60,6 +60,9 @@ Plug 'farmergreg/vim-lastplace'
 " 'Buffer tabs' that live in the tabline
 Plug 'ap/vim-buftabline'
 
+" Automatically resizes the active window to the "golden" size
+Plug 'dm1try/golden_size'
+
 
 
 " ====================================
